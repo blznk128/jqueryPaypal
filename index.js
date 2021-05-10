@@ -1,5 +1,9 @@
+let shopcart = []
 $(document).ready(function() {
-    let shopcart = []
+    if(sessionStorage["sca"]!= null) {
+        shopcart = JSON.parse(sessionStorage["sca"].toString())
+    }
+    outputCart()
     $('.productItem').click(function(e) {
         e.preventDefault();
         
@@ -16,7 +20,12 @@ $(document).ready(function() {
         if(!itemInCart){
             shopcart.push(itemInfo)
         }
+        sessionStorage["sca"] = JSON.stringify(shopcart)
+        outputCart()
         
-        console.log(shopcart)
     })
 })
+
+function outputCart() {
+    console.log(sessionStorage["sca"])
+}

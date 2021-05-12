@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <div id= checkoutdiv>
+       <div>Subtotal <span class = items></span>(items): $total <span class = total></span></div>
+        <div><span class= "btn btn-success" data-toggle="modal" data-target="#cart">Open shopping cart</span><span class= "btn btn-primary">Proceed to checkout</span></div>
+       
+    </div>
     <div class = item><h3>Iphone</h3>
         <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="" >
             <div>
@@ -47,8 +52,16 @@
     </div>
     <div id = output></div>
 
-
-
+    <!-- Modals -->
+    <div class="modal fade" id = "cart" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">Shopping Cart</div>
+                <div class="modal-body">your contents</div>
+                <div class="modal-footer">buttons</div>
+            </div>
+        </div>
+    </div>
 
 
 

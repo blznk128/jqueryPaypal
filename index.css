@@ -5,3 +5,9 @@
     float: left;
     height: 300px;
 }
+
+#output {
+    clear: both;
+    border: 1px solid black;
+    padding: 30px;
+}

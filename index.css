@@ -1,15 +1,7 @@
-.item {
-    border: 1px solid black;
-    padding: 20px;
-    width: 200px;
-    float: left;
-    height: 300px;
-}
+
 
 #output {
     clear: both;
-    border: 1px solid black;
-    padding: 30px;
 }
 
 #checkoutdiv {

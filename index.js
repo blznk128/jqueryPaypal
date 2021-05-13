@@ -37,10 +37,10 @@ function outputCart() {
         console.log('this is value: ',value)
         let stotal = value.qty * value.price
         total += stotal
-        itemCnt += value.qty
-        holderHTML += '<div>Item '+ value.name + '('+value.s+')Qty ' + value.qty + 'Price' + formatMoney(value.price) +  'ID('+value.id+') subtotal = ' + formatMoney(stotal) + '</div>'
+        itemCnt += parseInt(value.qty)
+        holderHTML += '<tr><td>'+ value.qty + '</td><td>#'+ value.id+''+value.name+'('+value.s+')</td><td>'+formatMoney(value.price)+'</td><td class="text-right">'+formatMoney(stotal)+'</td></tr>'
     })
-    holderHTML += '<div>'+ formatMoney(total) + '</div>'
+    holderHTML += '<tr><td colspan="3" class="text-right">Total</td><td class="text-right">'+ formatMoney(total) + '</td></tr>'
     $("#output").html(holderHTML)
     $(".total").html(formatMoney(total))
     $(".items").html(itemCnt)

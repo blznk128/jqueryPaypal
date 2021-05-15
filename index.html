@@ -9,47 +9,143 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <header class="header">
+        <div class="htop"></div>
+        <div class="hbot"></div>
+    </header>
+    <div class="content">
+        <!--content changes on each page-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">Iphone</h3>
+                                <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="pic of iphone">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text">
+                               Product and why this is the best product ever and some other jazz. 
+                               <a href="#" class=productItem data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">Ipad</h3>
+                                <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="pic of iphone">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text">
+                               Product and why this is the best product ever and some other jazz. 
+                               <a href="#" class=productItem data-name="iPad" data-s="white" data-price="30000" data-id="2">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">Cable 3</h3>
+                                <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="pic of iphone">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text">
+                               Product and why this is the best product ever and some other jazz. 
+                               <a href="#" class=productItem data-name="Cable" data-s="3" data-price="1200" data-id="3">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">SD Card 32GB</h3>
+                                <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="pic of iphone">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text">
+                               Product and why this is the best product ever and some other jazz. 
+                               <a href="#" class=productItem data-name="SD Card" data-s="32GB" data-price="3000" data-id="4">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">SD Card 16GB</h3>
+                                <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="pic of iphone">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text">
+                               Product and why this is the best product ever and some other jazz. 
+                               <a href="#" class=productItem data-name="SD Card" data-s="16GB" data-price="2000" data-id="5">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">SD Card 4GB</h3>
+                                <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="pic of iphone">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text">
+                               Product and why this is the best product ever and some other jazz. 
+                               <a href="#" class=productItem data-name="SD Card" data-s="4GB" data-price="1000" data-id="6">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">Cable 4</h3>
+                                <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="pic of iphone">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text">
+                               Product and why this is the best product ever and some other jazz. 
+                               <a href="#" class=productItem data-name="Cable" data-s="4" data-price="1600" data-id="7">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">Cable 1</h3>
+                                <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="pic of iphone">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text">
+                               Product and why this is the best product ever and some other jazz. 
+                               <a href="#" class=productItem data-name="Cable" data-s="1" data-price="300" data-id="8">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; Copyright info blah blah
+    </footer>
+
+
     <div id= checkoutdiv>
        <div>Subtotal <span class = items></span>(items): $total <span class = total></span></div>
-        <div><span class= "btn btn-success" data-toggle="modal" data-target="#cart">Open shopping cart</span><span class= "btn btn-primary">Proceed to checkout</span></div>
-       
+        <div><span class= "btn btn-success" data-toggle="modal" data-target="#cart">Open shopping cart</span><a href="checkout.html" class= "btn btn-primary">Proceed to checkout</a></div>
     </div>
-    <div class = item><h3>Iphone</h3>
-        <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="" >
-            <div>
-                Product and why this is the best product ever and some other jazz. <a href="#" class=productItem data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a>
-            </div>
-    </div>
-    <div class = item><h3>Ipad</h3>
-        <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="" >
-            <div>
-                Product and why this is the best product ever and some other jazz. <a href="#" class=productItem data-name="iPad" data-s="white" data-price="30000" data-id="2">Add to Cart</a>
-            </div>
-    </div>
-    <div class = item><h3>Cable 3</h3>
-        <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="" >
-            <div>
-                Product and why this is the best product ever and some other jazz. <a href="#" class=productItem data-name="Cable" data-s="3" data-price="1200" data-id="3">Add to Cart</a>
-            </div>
-    </div>
-    <div class = item><h3>SD Card 32GB</h3>
-        <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="" >
-            <div>
-                Product and why this is the best product ever and some other jazz. <a href="#" class=productItem data-name="SD Card" data-s="32GB" data-price="3000" data-id="4">Add to Cart</a>
-            </div>
-    </div>
-    <div class = item><h3>SD Card 16GB</h3>
-        <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="" >
-            <div>
-                Product and why this is the best product ever and some other jazz. <a href="#" class=productItem data-name="SD Card" data-s="16GB" data-price="2000" data-id="5">Add to Cart</a>
-            </div>
-    </div>
-    <div class = item><h3>SD Card 4GB</h3>
-        <img src="https://via.placeholder.com/350x150" class="img-fluid" alt="" >
-            <div>
-                Product and why this is the best product ever and some other jazz. <a href="#" class=productItem data-name="SD Card" data-s="4GB" data-price="1000" data-id="6">Add to Cart</a>
-            </div>
-    </div>
+    
+
+   
     <!-- Modals -->
     <div class="modal fade" id = "cart" tabindex="-1">
         <div class="modal-dialog">
@@ -70,7 +166,7 @@
                     </tbody>
                 </table>
                 </div>
-                <div class="modal-footer">buttons</div>
+                <div class="modal-footer"><button type="button" class="bt btn-warning" data-dismiss="modal">Continue Shopping</button><a href="checkout.html" class= "btn btn-primary">Proceed to checkout</a></div>
             </div>
         </div>
     </div>

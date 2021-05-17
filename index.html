@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header class="header">
         <div class="htop">
-            <div id= checkoutdiv>
-                <div>Subtotal <span class = items></span>(items): $total <span class = total></span></div>
-                 <div><span class= "btn btn-success" data-toggle="modal" data-target="#cart">Open shopping cart</span><a href="checkout.html" class= "btn btn-primary">Proceed to checkout</a></div>
+            <div id= checkoutdiv class ="container">
+                <div class="row">
+                <div class="col-md-6 text-xs-right">(<span class = items text-muted></span><small>items</small>)<span class = total></span></div>
+                 <div class="col-md-6 text-xs-right"><span class= "btn btn-success" data-toggle="modal" data-target="#cart">Open shopping cart</span><a href="checkout.html" class= "btn btn-primary">Proceed to checkout</a></div>
              </div>
+            </div>
         </div>
         <div class="hbot">
             <div class='container'>
                 <nav class="navbar navbar-full navbar-dark bg-inverse">
                     <button class="navbar-toggler light float-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#nvbar"></button>
-                        <div id="nvbar" class="collapse navbar-toggleable-xs">
-                            <ul class="nav navbar-nav float-sm-right">
+                        <div id="nvbar" class="collapse navbar">
+                            <ul class="nav">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
@@ -154,7 +156,11 @@
         </div>
     </div>
     <footer class="footer">
-        &copy; Copyright info blah blah
+        <div class="container">
+            <p class="text-center">
+                &copy; Copyright info blah blah
+            </p>
+        </div>
     </footer>
 
 

@@ -1,4 +1,7 @@
-
+.footer {
+    background-color: darkgray;
+    color: white;
+}
 
 #output {
     clear: both;

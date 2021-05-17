@@ -10,3 +10,7 @@
 #checkoutdiv {
     display: none;
 }
+
+input[type="number"]{
+    width: 50px;
+}

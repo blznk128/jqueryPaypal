@@ -1,5 +1,29 @@
+let shopcart =[]
 $(document).ready(function() {
     outputCart()
+    $("#output").on("change keyup",".dynqua", function() {
+        let iteminfo = $(this.dataset)[0]
+        let itemInCart = false
+        console.log(shopcart)
+        let qty = $(this).val()
+        if (qty < 0) {
+            qty = 0
+            $(this).val(0)
+        }
+        $.each(shopcart, function(index, value){
+            if(value.id == iteminfo.id){
+                shopcart[index].qty=qty
+                itemInCart = true
+            }
+        })
+        
+        sessionStorage["sca"] = JSON.stringify(shopcart)
+        outputCart()
+        
+        console.log(sessionStorage["sca"])
+    })
+
+
     function outputCart() {
         if(sessionStorage["sca"]!= null) {
             shopcart = JSON.parse(sessionStorage["sca"].toString())

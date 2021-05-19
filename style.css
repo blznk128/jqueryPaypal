@@ -10,3 +10,7 @@
             background-color: darkgrey;
             color: white;
         }
+
+        img {
+            height: 305px!important;
+        }

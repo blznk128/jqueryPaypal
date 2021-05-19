@@ -20,7 +20,7 @@
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
             <input type="hidden" name="cmd" value="_cart">
             <input type="hidden" name="upload" value="1">
-            <input type="hidden" name="business" value="seller@dezignerfotos.com">
+            <input type="hidden" name="business" value="blznk128@yahoo.com">
             <table class="table table-hover">
                 <thead class="thead-inverse">
                     <tr>
@@ -89,7 +89,10 @@
                     var a = (index + 1);
                     total += stotal;
                     itemCnt += parseInt(value.qty);
-                    holderHTML += '<tr><td><span class="btn btn-danger remove-item">x</span></td><td><input size="5"  type="number" class="dynqua" name="quantity_' + a + '" value="' + value.qty + '" data-id="' + value.id + '"></td><td><input type="hidden" name="item_name_' + a + '" value="' + value.name + ' ' + value.s + '">' + value.name + '(' + value.s + ')</td><td><input type="hidden" name="amount_' + a + '" value="' + formatMoney(value.price) + '"> $' + formatMoney(value.price) + ' </td><td class="text-xs-right"> ' + formatMoney(stotal) + '</td></tr>';
+                    holderHTML += '<tr><td><span class="btn btn-danger remove-item">x</span></td><td><input size="5"  type="number" class="dynqua" name="quantity_' + a + 
+                    '" value="' + value.qty + '" data-id="' + value.id + '"></td><td><input type="hidden" name="item_name_' + a + '" value="' + value.name + ' ' + value.s + '">' + 
+                        value.name + '(' + value.s + ')</td><td><input type="hidden" name="amount_' + a + '" value="' + formatMoney(value.price) + '"> $' + formatMoney(value.price) + 
+                            ' </td><td class="text-xs-right"> ' + formatMoney(stotal) + '</td></tr>';
                 })
                 holderHTML += '<tr><td colspan="4" class="text-xs-right">Total</td><td class="text-xs-right">$' + formatMoney(total) + '</td></tr>';
                 $('#output').html(holderHTML);
